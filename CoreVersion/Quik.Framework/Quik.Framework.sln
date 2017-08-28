@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quik.Framework", "Quik.Framework\Quik.Framework.csproj", "{A068DB30-3745-44C3-A7C5-DD664AEA236D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-基础设施", "01-基础设施", "{1F0455FF-0C0D-4B1B-BA19-F840FF567630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.Utils", "Quik.Framework.Utils\Quik.Framework.Utils.csproj", "{D2F0D039-9D75-4977-A858-F739C3C6221D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snowflake.Net.Core", "Snowflake.Net.Core\Snowflake.Net.Core.csproj", "{7A11968B-5B00-4AFB-898D-AFB01B7EF58A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-数据模型", "02-数据模型", "{3CE9BA5C-1B85-4572-8AD9-BB42ED5F72B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.DbContext", "Quik.Framework.DbContext\Quik.Framework.DbContext.csproj", "{5CA26B42-CD0A-4906-BA62-B1C6C719A763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.Entity", "Quik.Framework.Entity\Quik.Framework.Entity.csproj", "{D324B42A-4DD6-44A0-BD56-89DEF58CC013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-应用服务", "03-应用服务", "{23FD9425-2AD3-4562-A572-7E2C4A057C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.AppService", "Quik.Framework.AppService\Quik.Framework.AppService.csproj", "{42A51E05-886C-494D-BEBB-707BCC1D1C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.Dto", "Quik.Framework.Dto\Quik.Framework.Dto.csproj", "{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quik.Framework.Enum", "Quik.Framework.Enum\Quik.Framework.Enum.csproj", "{5D55D855-FFFB-4120-B299-A059008ED268}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-表现层", "04-表现层", "{C770907F-85BE-45CF-8FFF-2063807D321D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A068DB30-3745-44C3-A7C5-DD664AEA236D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A068DB30-3745-44C3-A7C5-DD664AEA236D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A068DB30-3745-44C3-A7C5-DD664AEA236D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A068DB30-3745-44C3-A7C5-DD664AEA236D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F0D039-9D75-4977-A858-F739C3C6221D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F0D039-9D75-4977-A858-F739C3C6221D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F0D039-9D75-4977-A858-F739C3C6221D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F0D039-9D75-4977-A858-F739C3C6221D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A11968B-5B00-4AFB-898D-AFB01B7EF58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A11968B-5B00-4AFB-898D-AFB01B7EF58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A11968B-5B00-4AFB-898D-AFB01B7EF58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A11968B-5B00-4AFB-898D-AFB01B7EF58A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA26B42-CD0A-4906-BA62-B1C6C719A763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA26B42-CD0A-4906-BA62-B1C6C719A763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA26B42-CD0A-4906-BA62-B1C6C719A763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA26B42-CD0A-4906-BA62-B1C6C719A763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D324B42A-4DD6-44A0-BD56-89DEF58CC013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D324B42A-4DD6-44A0-BD56-89DEF58CC013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D324B42A-4DD6-44A0-BD56-89DEF58CC013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D324B42A-4DD6-44A0-BD56-89DEF58CC013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A51E05-886C-494D-BEBB-707BCC1D1C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A51E05-886C-494D-BEBB-707BCC1D1C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A51E05-886C-494D-BEBB-707BCC1D1C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A51E05-886C-494D-BEBB-707BCC1D1C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D55D855-FFFB-4120-B299-A059008ED268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D55D855-FFFB-4120-B299-A059008ED268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D55D855-FFFB-4120-B299-A059008ED268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D55D855-FFFB-4120-B299-A059008ED268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A068DB30-3745-44C3-A7C5-DD664AEA236D} = {C770907F-85BE-45CF-8FFF-2063807D321D}
+		{D2F0D039-9D75-4977-A858-F739C3C6221D} = {1F0455FF-0C0D-4B1B-BA19-F840FF567630}
+		{7A11968B-5B00-4AFB-898D-AFB01B7EF58A} = {1F0455FF-0C0D-4B1B-BA19-F840FF567630}
+		{5CA26B42-CD0A-4906-BA62-B1C6C719A763} = {3CE9BA5C-1B85-4572-8AD9-BB42ED5F72B8}
+		{D324B42A-4DD6-44A0-BD56-89DEF58CC013} = {3CE9BA5C-1B85-4572-8AD9-BB42ED5F72B8}
+		{42A51E05-886C-494D-BEBB-707BCC1D1C6B} = {23FD9425-2AD3-4562-A572-7E2C4A057C85}
+		{F0FDC416-C5FF-43AC-9F3C-AFD89461AC50} = {23FD9425-2AD3-4562-A572-7E2C4A057C85}
+		{5D55D855-FFFB-4120-B299-A059008ED268} = {23FD9425-2AD3-4562-A572-7E2C4A057C85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DB6B21D-8F7B-44DB-846B-494FE6DE88DF}
+	EndGlobalSection
+EndGlobal

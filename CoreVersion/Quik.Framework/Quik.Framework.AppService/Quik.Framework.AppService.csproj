@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quik.Framework.DbContext\Quik.Framework.DbContext.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Dto\Quik.Framework.Dto.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Entity\Quik.Framework.Entity.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Enum\Quik.Framework.Enum.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Utils\Quik.Framework.Utils.csproj" />
+    <ProjectReference Include="..\Snowflake.Net.Core\Snowflake.Net.Core.csproj" />
+  </ItemGroup>
+
+</Project>
