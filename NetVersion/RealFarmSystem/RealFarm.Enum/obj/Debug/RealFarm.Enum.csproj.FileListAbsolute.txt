@@ -1,0 +1,4 @@
+E:\Work\RealFarmSystem\RealFarm.Enum\bin\Debug\RealFarm.Enum.dll
+E:\Work\RealFarmSystem\RealFarm.Enum\bin\Debug\RealFarm.Enum.pdb
+E:\Work\RealFarmSystem\RealFarm.Enum\obj\Debug\RealFarm.Enum.dll
+E:\Work\RealFarmSystem\RealFarm.Enum\obj\Debug\RealFarm.Enum.pdb

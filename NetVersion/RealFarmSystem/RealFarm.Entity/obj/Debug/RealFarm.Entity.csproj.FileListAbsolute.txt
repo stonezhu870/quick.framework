@@ -1,0 +1,7 @@
+E:\Work\RealFarmSystem\RealFarm.Entity\bin\Debug\RealFarm.Entity.dll
+E:\Work\RealFarmSystem\RealFarm.Entity\bin\Debug\RealFarm.Entity.pdb
+E:\Work\RealFarmSystem\RealFarm.Entity\bin\Debug\Chloe.dll
+E:\Work\RealFarmSystem\RealFarm.Entity\bin\Debug\Chloe.MySql.dll
+E:\Work\RealFarmSystem\RealFarm.Entity\bin\Debug\SqlSugar.dll
+E:\Work\RealFarmSystem\RealFarm.Entity\obj\Debug\RealFarm.Entity.dll
+E:\Work\RealFarmSystem\RealFarm.Entity\obj\Debug\RealFarm.Entity.pdb

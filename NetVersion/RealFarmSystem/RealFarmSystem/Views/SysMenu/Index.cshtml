@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "菜单管理";
+    Layout = null;
+}
+<div class="bjui-pageContent" style="top: 0px; bottom: 35px;">
+    <div id="menuDiv" style="bottom: 30px;">
+        <table id="j_datagrid" class="table table-bordered"></table>
+    </div>
+</div>
+<script>
+    $(function () {
+        loadGrid();
+    });
+
+    function loadGrid() {
+        $('#j_datagrid').datagrid({
+            height: '90%',
+            tableWidth: '100%',
+            gridTitle: '菜单表格',
+            showToolbar: true,
+            dataUrl: '/sysmenu/GetData',
+            filterThead: false,
+            columnFilter: false,
+            inlineEditMult: false,
+            showCheckboxcol: true,
+            paging: false,
+            isTree: 'menu_name',
+            treeOptions: {
+                expandAll: false,
+                add: false,
+                simpleData: true,
+                keys: {
+                    parentKey: 'parent_id'
+                }
+            },
+            columns: [
+                { name: 'menu_name', label: '菜单名称', align: 'center' },
+                { name: 'menu_url', label: '菜单Url', align: 'center' },
+                { name: 'menu_sort', label: '排序', align: 'center' },
+                { name: 'menu_font', label: '字体', align: 'center' },
+                { name: 'menu_icon', label: '图标', align: 'center' },
+                 { name: 'remark', label: '备注', align: 'center' },
+                { name: 'create_time', label: '创建时间', align: 'center'}
+            ],
+            // paging: { pageSize: 50, pageCurrent: 10 },
+            linenumberAll: true
+        });
+
+        jutils.loadToolBar('#menuDiv');
+    }
+
+
+    function add() {
+        var url = '/sysmenu/form/' +'';
+        jutils.dialog('menudialog', url, '菜单', null, null, function () {
+            $('#j_datagrid').datagrid('refresh');
+        });
+    }
+    function edit() {
+        //console.log('edit');
+
+        //var rows = $('#j_datagrid').data('selectedDatas');
+        //if (rows !== undefined&&rows.length === 1) {
+        //    var id = rows[0].id;
+        //    BJUI.dialog({
+        //        id: 'menudialog',
+        //        url: '/sysmenu/form/' + id,
+        //        title: '菜单',
+        //        width: 1000,
+        //        height: 600,
+        //        mask: true
+        //    });
+        //} else {
+        //    jutils.info('请先选择数据行');
+        //}
+        var rows = $('#j_datagrid').selectedRows();
+        if (rows.length === 1) {
+            var id = rows[0].id;
+            var url = '/sysmenu/form/' + id;
+            jutils.dialog('menudialog', url, '菜单', null, null, function () {
+                $('#j_datagrid').datagrid('refresh');
+            });
+        } else {
+            jutils.warn('选择一条数据行进行编辑');
+        }
+    }
+
+    function del() {
+        var rows = $('#j_datagrid').selectedRows();
+        if (rows.length === 0) {
+            jutils.warn('选择一条数据行编辑');
+            return;
+        }
+        jutils.confirm('确认删除吗', function () {
+            jutils.info('你妹');
+        });
+    }
+</script>

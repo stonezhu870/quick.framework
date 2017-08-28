@@ -1,0 +1,6 @@
+E:\Work\RealFarmSystem\RealFarm.Utils\bin\Debug\RealFarm.Utils.dll
+E:\Work\RealFarmSystem\RealFarm.Utils\bin\Debug\RealFarm.Utils.pdb
+E:\Work\RealFarmSystem\RealFarm.Utils\bin\Debug\NLog.dll
+E:\Work\RealFarmSystem\RealFarm.Utils\bin\Debug\NLog.xml
+E:\Work\RealFarmSystem\RealFarm.Utils\obj\Debug\RealFarm.Utils.dll
+E:\Work\RealFarmSystem\RealFarm.Utils\obj\Debug\RealFarm.Utils.pdb

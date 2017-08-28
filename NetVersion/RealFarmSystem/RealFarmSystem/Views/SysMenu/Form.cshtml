@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="bjui-pageContent" style="top: 0px; bottom: 35px;">
+    <div class="bs-example">
+        <form id="menuform">
+            <input type="hidden" name="id" id="id" value="@(ViewBag.Id)">
+            <div class="bjui-row col-2">
+                <label class="row-label">菜单名称</label>
+                <div class="row-input required">
+                    <input type="text" name="menu_name" id="menu_name" value="" data-rule="required">
+                </div>
+                <label class="row-label">url</label>
+                <div class="row-input">
+                    <input type="text" name="menu_url" id="menu_url" value="" data-rule="">
+                </div>
+                <label class="row-label">排序</label>
+                <div class="row-input required">
+                    <input type="text" name="menu_sort" id="menu_sort" value="1" data-toggle="spinner" data-min="1" data-max="10000" data-step="1" data-rule="integer">
+                </div>
+                <label class="row-label">父节点</label>
+                <div class="row-input">
+                    @Html.DropDownList("parent_id", ViewBag.MenuSel as SelectList, new { @class = "form-control" })
+
+                </div>
+                <label class="row-label">菜单图标</label>
+                <div class="row-input">
+                    <input type="text" name="menu_font" id="menu_font" value="" data-rule="">
+                </div>
+                <br/>
+                <label class="row-label">备注</label>
+                <div class="row-input">
+                    <textarea name="remark" id="remark" data-toggle="autoheight" cols="60" rows="4"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bjui-pageFooter" style="bottom: 25px;">
+    <ul>
+        <li><button type="button" class="btn-close btn" data-icon="close"><i class="fa fa-close"></i> 取消</button></li>
+        <li><button type="button" class="btn-default btn" data-icon="save" onclick="save();"><i class="fa fa-save"></i> 保存</button></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function() {
+        loadData();
+    });
+
+
+    function loadData() {
+        var id =$.CurrentDialog.find("#id").val();
+        if (id !== '') {
+
+            jutils.ajaxGet('/sysmenu/GetDataById', { id: id }, function(res) {
+                // console.log('返回内容：\n' + JSON.stringify(json));
+                $('#menuform').initFormData(res.Data);
+
+            });
+        }
+    }
+    function save() {
+        BJUI.ajax('ajaxform',{
+            url: '/sysmenu/savedata',
+            form: $('#menuform'),
+            closeCurrent:true
+        });
+    }
+</script>
+

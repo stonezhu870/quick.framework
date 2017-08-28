@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8A6DD45-98A7-4754-8610-0C6AD5CB5F96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RealFarm.AppService</RootNamespace>
+    <AssemblyName>RealFarm.AppService</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SqlSugar, Version=4.3.2.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\sqlSugar.4.3.2.7\lib\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseAppService.cs" />
+    <Compile Include="Sys\SysFuncAppService.cs" />
+    <Compile Include="Sys\SysMenuAppService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\SysRoleAppService.cs" />
+    <Compile Include="Sys\SysUserAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RealFarm.DbContext\RealFarm.DbContext.csproj">
+      <Project>{8d6b47c5-431d-49ce-bd35-a8cc01ec3a90}</Project>
+      <Name>RealFarm.DbContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealFarm.Dto\RealFarm.Dto.csproj">
+      <Project>{1f35b9ed-1b59-4c58-87ee-a8bd29b161f7}</Project>
+      <Name>RealFarm.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealFarm.Entity\RealFarm.Entity.csproj">
+      <Project>{69ab6a7a-2c2c-4406-a81e-046dc94867dc}</Project>
+      <Name>RealFarm.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealFarm.Enum\RealFarm.Enum.csproj">
+      <Project>{983728b3-bd72-4180-a3f3-e5df58c14d48}</Project>
+      <Name>RealFarm.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RealFarm.Utils\RealFarm.Utils.csproj">
+      <Project>{1da76f02-049e-4614-bc4e-a26d9dfaf3a6}</Project>
+      <Name>RealFarm.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Snowflake\Snowflake.Net.csproj">
+      <Project>{a964980d-9df4-44f2-914e-fdeb000552d6}</Project>
+      <Name>Snowflake.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

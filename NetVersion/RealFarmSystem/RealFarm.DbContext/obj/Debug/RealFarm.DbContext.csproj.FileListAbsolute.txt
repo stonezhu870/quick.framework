@@ -1,0 +1,13 @@
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\RealFarm.DbContext.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\RealFarm.DbContext.pdb
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\Chloe.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\Chloe.MySql.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\MySql.Data.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\SqlSugar.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\obj\Debug\RealFarm.DbContext.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\obj\Debug\RealFarm.DbContext.pdb
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\RealFarm.Utils.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\NLog.dll
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\RealFarm.Utils.pdb
+E:\Work\RealFarmSystem\RealFarm.DbContext\bin\Debug\NLog.xml
+E:\Work\RealFarmSystem\RealFarm.DbContext\obj\Debug\RealFarm.DbContext.csprojResolveAssemblyReference.cache

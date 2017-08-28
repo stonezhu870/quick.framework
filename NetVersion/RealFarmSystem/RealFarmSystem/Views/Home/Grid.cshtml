@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = null;
+}
+
+<div class="bjui-pageContent" style="top: 0px; bottom: 35px;">
+    <div id="menuDiv" style="bottom: 30px;">
+        <table id="j_datagrid" class="table table-bordered"></table>
+    </div>
+</div>
+<script>
+    $(function () {
+        loadGrid();
+    });
+
+    function loadGrid() {
+        $('#j_datagrid').datagrid({
+            //height: '100%',
+            tableWidth: '100%',
+            gridTitle: '菜单表格',
+            showToolbar: true,
+            dataUrl: '/home/GetData',
+            filterThead: false,
+            columnFilter: false,
+            inlineEditMult: false,
+            showCheckboxcol: true,
+            paging: { pageSize: 18, pageCurrent: 1 },
+            columns: [
+                { name: 'menu_name', label: '菜单名称', align: 'center' },
+                { name: 'menu_url', label: '菜单Url', align: 'center' },
+                { name: 'menu_sort', label: '排序', align: 'center' },
+                { name: 'menu_font', label: '字体', align: 'center' },
+                { name: 'menu_icon', label: '图标', align: 'center' },
+                { name: 'create_time', label: '操作时间', align: 'center', type: 'date', pattern: 'yyyy-MM-dd HH:mm:ss' }
+            ],
+            // paging: { pageSize: 50, pageCurrent: 10 },
+            linenumberAll: true
+        });
+
+        jutils.loadToolBar('#menuDiv');
+    }
+
+
+    function add() {
+        console.log('add');
+        BJUI.dialog({
+            id: 'test_dialog6',
+            url: '/home/about',
+            title: '模态Dialog',
+            width: 1200,
+            height: 700,
+            mask: true
+        });
+    }
+    function edit() {
+        console.log('edit');
+
+        var rows = $('#j_datagrid').data('selectedDatas');
+        if (rows.length === 1) {
+            BJUI.alertmsg('info', '你点击了确定按钮！');
+        } else {
+
+        }
+        console.log(rows);
+    }
+
+    function del() {
+        console.log('del');
+    }
+</script>
