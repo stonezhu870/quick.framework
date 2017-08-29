@@ -2,3 +2,7 @@ E:\Work\RealFarmSystem\Snowflake\bin\Debug\Snowflake.Net.dll
 E:\Work\RealFarmSystem\Snowflake\bin\Debug\Snowflake.Net.pdb
 E:\Work\RealFarmSystem\Snowflake\obj\Debug\Snowflake.Net.dll
 E:\Work\RealFarmSystem\Snowflake\obj\Debug\Snowflake.Net.pdb
+E:\Work\quick.framework\NetVersion\RealFarmSystem\Snowflake\bin\Debug\Snowflake.Net.dll
+E:\Work\quick.framework\NetVersion\RealFarmSystem\Snowflake\bin\Debug\Snowflake.Net.pdb
+E:\Work\quick.framework\NetVersion\RealFarmSystem\Snowflake\obj\Debug\Snowflake.Net.dll
+E:\Work\quick.framework\NetVersion\RealFarmSystem\Snowflake\obj\Debug\Snowflake.Net.pdb

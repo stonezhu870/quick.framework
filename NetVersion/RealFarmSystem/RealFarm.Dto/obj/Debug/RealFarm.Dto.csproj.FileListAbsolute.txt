@@ -1,4 +1,0 @@
-E:\Work\RealFarmSystem\RealFarm.Dto\bin\Debug\RealFarm.Dto.dll
-E:\Work\RealFarmSystem\RealFarm.Dto\bin\Debug\RealFarm.Dto.pdb
-E:\Work\RealFarmSystem\RealFarm.Dto\obj\Debug\RealFarm.Dto.dll
-E:\Work\RealFarmSystem\RealFarm.Dto\obj\Debug\RealFarm.Dto.pdb
