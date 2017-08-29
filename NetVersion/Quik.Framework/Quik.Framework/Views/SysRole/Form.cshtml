@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+<div class="bjui-pageContent" style="top: 0px; bottom: 35px;">
+    <div class="bs-example">
+        <form id="roleform">
+            <input type="hidden" name="id" id="id" value="@(ViewBag.Id)">
+            <div class="bjui-row col-2">
+                <label class="row-label">角色名称</label>
+                <div class="row-input required">
+                    <input type="text" name="role_name" id="role_name" value="" data-rule="required">
+                </div>
+                <label class="row-label">角色编码</label>
+                <div class="row-input">
+                    <input type="text" name="role_code" id="role_code" value="" data-rule="">
+                </div>
+                <label class="row-label">排序</label>
+                <div class="row-input required">
+                    <input type="text" name="sort" id="sort" value="1" data-toggle="spinner" data-min="1" data-max="10000" data-step="1" data-rule="integer">
+                </div>
+                <label class="row-label">启用状态</label>
+                <div class="row-input required">
+                    <select name="status" id="status" class="form-control">
+                        <option value="true">启用</option>
+                        <option value="false">禁用</option>
+                    </select>
+                </div>
+                <br />
+                <label class="row-label">备注</label>
+                <div class="row-input">
+                    <textarea name="remark" id="remark" data-toggle="autoheight" cols="60" rows="4"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bjui-pageFooter" style="bottom: 25px;">
+    <ul>
+        <li><button type="button" class="btn-close btn" data-icon="close"><i class="fa fa-close"></i> 取消</button></li>
+        <li><button type="button" class="btn-default btn" data-icon="save" onclick="save();"><i class="fa fa-save"></i> 保存</button></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+        loadData();
+    });
+
+
+    function loadData() {
+        var id = $.CurrentDialog.find("#id").val();
+        if (id !== '') {
+
+            jutils.ajaxGet('/sysrole/GetDataById', { id: id }, function (res) {
+                $('#roleform').initFormData(res.Data);
+
+            });
+        }
+    }
+    function save() {
+        BJUI.ajax('ajaxform', {
+            url: '/sysrole/savedata',
+            form: $('#roleform'),
+            closeCurrent: true
+        });
+    }
+</script>
+
