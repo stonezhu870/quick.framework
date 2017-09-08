@@ -13,7 +13,10 @@ namespace Quik.Framework.Controllers
     {
         public IActionResult Index()
         {
-            LogNHelper.Info("访问了首页");
+            // LogNHelper.Info("访问了首页");
+            var ucookie = UserCookieHelper.CookieParse(this.HttpContext.User);
+            ViewBag.AccountName = ucookie.AccountName;
+            ViewBag.RealName = ucookie.RealName;
             return View();
         }
 

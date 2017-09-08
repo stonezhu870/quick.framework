@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".bowerrc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.1" />
   </ItemGroup>
 
@@ -14,12 +20,153 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Plugins\B-JUI\assets\prettify.js" />
+    <None Include="wwwroot\Plugins\B-JUI\assets\run_prettify.js" />
+    <None Include="wwwroot\Plugins\B-JUI\assets\ZeroClipboard.js" />
+    <None Include="wwwroot\Plugins\B-JUI\assets\ZeroClipboard.swf" />
+    <None Include="wwwroot\Plugins\B-JUI\js\bjui-all.js" />
+    <None Include="wwwroot\Plugins\B-JUI\js\bjui-all.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\js\bjui-all.min.js.map" />
+    <None Include="wwwroot\Plugins\B-JUI\js\jquery-1.11.3.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\js\jquery.cookie.js" />
+    <None Include="wwwroot\Plugins\B-JUI\other\html5shiv.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\other\ie10-viewport-bug-workaround.js" />
+    <None Include="wwwroot\Plugins\B-JUI\other\jquery.iframe-transport.js" />
+    <None Include="wwwroot\Plugins\B-JUI\other\respond.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrap.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrap.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\bootstrap-select.css.map" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\bootstrap-select.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\bootstrap-select.js.map" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\bootstrap-select.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\defaults-zh_CN.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\bootstrapSelect\defaults-zh_CN.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\colorpicker\js\bootstrap-colorpicker.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\colorpicker\js\bootstrap-colorpicker.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\download\jquery.fileDownload.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\dragsort\jquery.dragsort-0.5.1.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\dragsort\jquery.dragsort-0.5.1.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\bar.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\chord.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\eventRiver.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\force.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\funnel.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\gauge.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\k.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\line.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\map.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\pie.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\radar.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\chart\scatter.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\echarts.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\blue.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\dark.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\default.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\gray.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\green.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\helianthus.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\infographic.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\macarons.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\red.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\echarts\theme\shine.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\adapters\standalone-framework.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\highcharts-3d.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\highcharts-all.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\highcharts-more.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\highcharts.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\canvas-tools.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\data.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\drilldown.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\exporting.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\funnel.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\heatmap.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\no-data-to-display.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\modules\solid-gauge.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\dark-blue.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\dark-green.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\dark-unica.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\gray.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\grid-light.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\grid.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\sand-signika.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\highcharts\themes\skies.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\icheck\icheck.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\icheck\icheck.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\kindeditor-all-min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\kindeditor-all.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\ar.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\en.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\ko.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\ru.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\zh-CN.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\lang\zh-TW.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\anchor\anchor.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\autoheight\autoheight.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\baidumap\baidumap.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\clearhtml\clearhtml.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\code\code.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\code\prettify.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\emoticons\emoticons.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\filemanager\filemanager.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\fixtoolbar\fixtoolbar.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\flash\flash.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\image\image.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\insertfile\insertfile.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\lineheight\lineheight.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\link\link.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\map\map.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\media\media.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\multiimage\images\swfupload.swf" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\multiimage\multiimage.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\pagebreak\pagebreak.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\plainpaste\plainpaste.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\preview\preview.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\quickformat\quickformat.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\table\table.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\template\template.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\kindeditor_4.1.11\plugins\wordpaste\wordpaste.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\jquery.validator.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\jquery.validator.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\jquery.validator.themes.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\local\en.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\local\ja.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\local\zh-CN.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\nice-validator-1.0.7\local\zh-TW.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\other\jquery.autosize.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\other\respond.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\swfupload\swfupload.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\swfupload\swfupload.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\uploadify\scripts\jquery.uploadify.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\uploadify\scripts\jquery.uploadify.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\uploadify\scripts\uploadify.swf" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\webuploader\Uploader.swf" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\webuploader\webuploader.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\webuploader\webuploader.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.all-3.5.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.all-3.5.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.core-3.5.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.core-3.5.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.excheck-3.5.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.excheck-3.5.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.exedit-3.5.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.exedit-3.5.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.exhide-3.5.js" />
+    <None Include="wwwroot\Plugins\B-JUI\plugins\ztree\jquery.ztree.exhide-3.5.min.js" />
+    <None Include="wwwroot\Plugins\B-JUI\themes\css\FA\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\Plugins\B-JUI\themes\css\FA\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Plugins\B-JUI\themes\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Plugins\B-JUI\themes\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\Plugins\B-JUI\themes\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\Plugins\locache\locache.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Quik.Framework.AppService\Quik.Framework.AppService.csproj" />
     <ProjectReference Include="..\Quik.Framework.DbContext\Quik.Framework.DbContext.csproj" />
     <ProjectReference Include="..\Quik.Framework.Dto\Quik.Framework.Dto.csproj" />
     <ProjectReference Include="..\Quik.Framework.Entity\Quik.Framework.Entity.csproj" />
-    <ProjectReference Include="..\Quik.Framework.Enum\Quik.Framework.Enum.csproj" />
     <ProjectReference Include="..\Quik.Framework.Utils\Quik.Framework.Utils.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Web\Quik.Framework.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
