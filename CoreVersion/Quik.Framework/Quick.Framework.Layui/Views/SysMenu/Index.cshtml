@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="layui-row">
+    <div class="layui-col-xs3">
+        <div class="">6/12</div>
+    </div>
+    <div class="layui-col-xs9">
+        <table  id="tbMenu"></table>
+    </div>
+</div>
+<script>
+    layui.use('table', function(){
+        var table = layui.table;
+        table.render({
+            elem: '#tbMenu',
+            height: 600,
+            url: '/sysmenu/getdate', //数据接口
+            page: true, //开启分页
+            method: 'post',
+            cols: [[ //表头
+                {checkbox: true},
+                , { field: 'menu_name', title: '菜单名称'}
+                , { field: 'menu_url', title: 'url'}
+                , { field: 'menu_icon', title: '城市'}
+                , { field: 'create_time', title: '创建时间'}
+                , { field: 'menu_sort', title: '排序'}
+                , { field: 'creator', title: '创建人'}
+            ]]
+        });
+    });
+</script>

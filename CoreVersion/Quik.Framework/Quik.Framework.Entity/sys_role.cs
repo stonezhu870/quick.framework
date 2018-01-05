@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using SqlSugar;
 
 namespace Quik.Framework.Entity
 {
@@ -12,6 +13,7 @@ namespace Quik.Framework.Entity
         /// Default:- 
         /// Nullable:False 
         /// </summary>
+        [SugarColumn(IsPrimaryKey = true)]
         public Int64 id {get;set;}
 
         /// <summary>

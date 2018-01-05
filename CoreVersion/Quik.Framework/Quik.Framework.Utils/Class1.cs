@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quik.Framework.AppService
+namespace Quik.Framework.Utils
 {
     public class Class1
     {

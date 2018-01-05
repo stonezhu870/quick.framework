@@ -10,11 +10,19 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Newtonsoft.Json;
 using System.Security.Principal;
+using Quik.Framework.AppService.System;
 
 namespace Quik.Framework.Controllers
 {
     public class LoginController : Controller
     {
+
+        private readonly SysRoleAppService _roleApp;
+
+        public LoginController(SysRoleAppService roleApp)
+        {
+            _roleApp = roleApp;
+        }
         public IActionResult Index()
         {
             var ucookie =UserCookieHelper.CookieParse(this.HttpContext.User);
@@ -22,7 +30,11 @@ namespace Quik.Framework.Controllers
             {
                 return Redirect("/home/index");
             }
-           return View();
+
+
+            var roleApp = new SysRoleAppService();
+            ViewBag.Count= roleApp.GetUserCunt();
+            return View();
         }
 
 
@@ -101,6 +113,22 @@ namespace Quik.Framework.Controllers
             return null;
         }
 
-       
+
+        public JsonResult GetUserCount()
+        {
+            var result=new ResultJson();
+            try
+            {
+              
+                result.Data= _roleApp.GetUserCunt();
+                result.Status = true;
+            }
+            catch (Exception e)
+            {
+                result.Message = e.Message;
+            }
+
+            return Json(result);
+        }
     }
 }

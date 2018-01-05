@@ -182,7 +182,7 @@
                         </li>*@
 
                     @{
-                        var menulist = ViewBag.TopMenuList as List<Sys_Menu> ?? new List<Sys_Menu>();
+                        var menulist = ViewBag.TopMenuList as List<sys_menu> ?? new List<sys_menu>();
 
                         int mindex = 1;
                         foreach (var menu in menulist)
@@ -190,13 +190,13 @@
                             if (mindex == 1)
                             {
                                 <li class="active">
-                                    <a href="javascript:void(0);" data-id="@(menu.Id)" data-title="@(menu.MenuName)">@(menu.MenuName)</a>
+                                    <a href="javascript:void(0);" data-id="@(menu.id)" data-title="@(menu.menu_name)">@(menu.menu_name)</a>
                                 </li>
                             }
                             else
                             {
                                 <li>
-                                    <a href="javascript:void(0);" data-id="@(menu.Id)" data-title="@(menu.MenuName)">@(menu.MenuName)</a>
+                                    <a href="javascript:void(0);" data-id="@(menu.id)" data-title="@(menu.menu_name)">@(menu.menu_name)</a>
                                 </li>
                             }
                             mindex++;
@@ -243,7 +243,7 @@
                 </ul>
                 <div class="navtab-panel tabsPageContent">
                     <div class="navtabPage unitBox">
-                        @Html.Partial("HomeBody")
+                        @*@Html.Partial("HomeBody")*@
                     </div>
                 </div>
             </div>

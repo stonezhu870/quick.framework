@@ -4,4 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="sqlSugarCore" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quik.Framework.Dto\Quik.Framework.Dto.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Entity\Quik.Framework.Entity.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Utils\Quik.Framework.Utils.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Web\Quik.Framework.Web.csproj" />
+  </ItemGroup>
+
 </Project>

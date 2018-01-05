@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <MvcRazorCompileOnPublish>flase</MvcRazorCompileOnPublish>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Plugins\layui\font\iconfont.svg" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\carousel.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\code.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\element.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\flow.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\form.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\jquery.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\laydate.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\layedit.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\layer.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\layim.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\laypage.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\laytpl.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\mobile.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\table.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\tree.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\upload.js" />
+    <None Include="wwwroot\Plugins\layui\lay\modules\util.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quik.Framework.AppService\Quik.Framework.AppService.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Dto\Quik.Framework.Dto.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Entity\Quik.Framework.Entity.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Utils\Quik.Framework.Utils.csproj" />
+    <ProjectReference Include="..\Quik.Framework.Web\Quik.Framework.Web.csproj" />
+  </ItemGroup>
+
+</Project>

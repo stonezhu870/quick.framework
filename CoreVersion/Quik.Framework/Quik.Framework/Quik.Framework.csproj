@@ -1,18 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
+<PropertyGroup>
+  <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+</PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove=".bowerrc" />
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.1" />
+    <PackageReference Include="sqlSugarCore" Version="4.6.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -162,7 +169,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Quik.Framework.AppService\Quik.Framework.AppService.csproj" />
-    <ProjectReference Include="..\Quik.Framework.DbContext\Quik.Framework.DbContext.csproj" />
     <ProjectReference Include="..\Quik.Framework.Dto\Quik.Framework.Dto.csproj" />
     <ProjectReference Include="..\Quik.Framework.Entity\Quik.Framework.Entity.csproj" />
     <ProjectReference Include="..\Quik.Framework.Utils\Quik.Framework.Utils.csproj" />
@@ -170,9 +176,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="NLog.config">
+    <Content Update="configs\NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties configs_4hosting_1json__JSONSchema="http://json.schemastore.org/config" /></VisualStudio></ProjectExtensions>
+<Target Name="CreateLogsFolder" AfterTargets="AfterPublish">
+  <MakeDir Directories="$(PublishDir)logs" Condition="!Exists('$(PublishDir)logs')" />
+  <MakeDir Directories="$(PublishUrl)logs" Condition="!Exists('$(PublishUrl)logs')" />
+</Target>
 </Project>
